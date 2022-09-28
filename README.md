@@ -1,3 +1,5 @@
+[![npm-badge](https://badge.fury.io/js/svelte-reactive-debounce.svg)](https://www.npmjs.com/package/svelte-reactive-debounce)
+
 # svelte-reactive-debounce
 
 Easily debounce svelte store updates and reactive statements (`$:` statements).
