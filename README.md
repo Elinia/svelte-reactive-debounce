@@ -34,18 +34,18 @@ npm install svelte-reactive-debounce
   import { writable } from 'svelte/store'
   import { debounceTimer } from 'svelte-reactive-debounce'
 
-  const keyword = writable('')
+  let keyword = ''
   let result = ''
 
   const timer = debounceTimer(500 /* debounce time (millisecond)*/)
-  $: if ($keyword.length > 0 && $timer.up()) {
+  $: if (keyword.length > 0 && $timer.up()) {
     result = 'Searching...'
     setTimeout(() => {
-      result = `I\'m the searching result of ${$keyword}.`
+      result = `I\'m the searching result of ${keyword}.`
     }, 500)
   }
 </script>
 
-Search: <input bind:value="{$keyword}" />
+Search: <input bind:value="{keyword}" />
 <p>{result}</p>
 ```
