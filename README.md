@@ -49,3 +49,7 @@ npm install svelte-reactive-debounce
 Search: <input bind:value="{keyword}" />
 <p>{result}</p>
 ```
+
+## Playground
+
+https://svelte.dev/repl/aa8c746fb3a340a78ef039a4b4806e5f?version=3.50.1
